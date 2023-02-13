@@ -83,6 +83,25 @@ code span.st { color: #4070a0; } /* String */
 code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -143,15 +162,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html">
- <span class="menu-text">My first Quarto website</span></a>
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./hello.html" aria-current="page">
- <span class="menu-text">My first Quarto document</span></a>
+ <span class="menu-text">Report</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./slides.html">
- <span class="menu-text">My first Quarto document</span></a>
+ <span class="menu-text">Slides</span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -188,7 +207,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1>Introduction</h1>
 <section id="data" class="level2">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
-<p>My <em>data</em> <u>come</u> from the <a href="https://allisonhorst.github.io/palmerpenguins/"><strong>palmerpenguins</strong></a> package.</p>
+<p><span class="citation" data-cites="gorman2014">(<a href="#ref-gorman2014" role="doc-biblioref">Gorman, Williams, and Fraser 2014</a>)</span>My <em>data</em> <u>come</u> from the <a href="https://allisonhorst.github.io/palmerpenguins/"><strong>palmerpenguins</strong></a> package.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(palmerpenguins)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
@@ -234,12 +253,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell-output-display">
 <div id="tbl-penguins" class="anchored">
 
-<div id="wgombteimw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="rekubvglaf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#wgombteimw) .gt_table {
+:where(#rekubvglaf) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -264,7 +283,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-left-color: #D3D3D3;
 }
 
-:where(#wgombteimw) .gt_heading {
+:where(#rekubvglaf) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -276,12 +295,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-:where(#wgombteimw) .gt_caption {
+:where(#rekubvglaf) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#wgombteimw) .gt_title {
+:where(#rekubvglaf) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -293,7 +312,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-bottom-width: 0;
 }
 
-:where(#wgombteimw) .gt_subtitle {
+:where(#rekubvglaf) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -305,13 +324,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-top-width: 0;
 }
 
-:where(#wgombteimw) .gt_bottom_border {
+:where(#rekubvglaf) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#wgombteimw) .gt_col_headings {
+:where(#rekubvglaf) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -326,7 +345,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-:where(#wgombteimw) .gt_col_heading {
+:where(#rekubvglaf) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -346,7 +365,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   overflow-x: hidden;
 }
 
-:where(#wgombteimw) .gt_column_spanner_outer {
+:where(#rekubvglaf) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -358,15 +377,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 4px;
 }
 
-:where(#wgombteimw) .gt_column_spanner_outer:first-child {
+:where(#rekubvglaf) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#wgombteimw) .gt_column_spanner_outer:last-child {
+:where(#rekubvglaf) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#wgombteimw) .gt_column_spanner {
+:where(#rekubvglaf) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -378,7 +397,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   width: 100%;
 }
 
-:where(#wgombteimw) .gt_group_heading {
+:where(#rekubvglaf) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -404,7 +423,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   text-align: left;
 }
 
-:where(#wgombteimw) .gt_empty_group_heading {
+:where(#rekubvglaf) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -419,15 +438,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   vertical-align: middle;
 }
 
-:where(#wgombteimw) .gt_from_md > :first-child {
+:where(#rekubvglaf) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#wgombteimw) .gt_from_md > :last-child {
+:where(#rekubvglaf) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#wgombteimw) .gt_row {
+:where(#rekubvglaf) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -446,7 +465,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   overflow-x: hidden;
 }
 
-:where(#wgombteimw) .gt_stub {
+:where(#rekubvglaf) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -459,7 +478,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 5px;
 }
 
-:where(#wgombteimw) .gt_stub_row_group {
+:where(#rekubvglaf) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -473,11 +492,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   vertical-align: top;
 }
 
-:where(#wgombteimw) .gt_row_group_first td {
+:where(#rekubvglaf) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#wgombteimw) .gt_summary_row {
+:where(#rekubvglaf) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -487,16 +506,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 5px;
 }
 
-:where(#wgombteimw) .gt_first_summary_row {
+:where(#rekubvglaf) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#wgombteimw) .gt_first_summary_row.thick {
+:where(#rekubvglaf) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#wgombteimw) .gt_last_summary_row {
+:where(#rekubvglaf) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -506,7 +525,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-bottom-color: #D3D3D3;
 }
 
-:where(#wgombteimw) .gt_grand_summary_row {
+:where(#rekubvglaf) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -516,7 +535,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 5px;
 }
 
-:where(#wgombteimw) .gt_first_grand_summary_row {
+:where(#rekubvglaf) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -526,11 +545,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-top-color: #D3D3D3;
 }
 
-:where(#wgombteimw) .gt_striped {
+:where(#rekubvglaf) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#wgombteimw) .gt_table_body {
+:where(#rekubvglaf) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -539,7 +558,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-bottom-color: #D3D3D3;
 }
 
-:where(#wgombteimw) .gt_footnotes {
+:where(#rekubvglaf) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -553,7 +572,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-:where(#wgombteimw) .gt_footnote {
+:where(#rekubvglaf) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -562,7 +581,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 5px;
 }
 
-:where(#wgombteimw) .gt_sourcenotes {
+:where(#rekubvglaf) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -576,7 +595,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-:where(#wgombteimw) .gt_sourcenote {
+:where(#rekubvglaf) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -584,64 +603,64 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 5px;
 }
 
-:where(#wgombteimw) .gt_left {
+:where(#rekubvglaf) .gt_left {
   text-align: left;
 }
 
-:where(#wgombteimw) .gt_center {
+:where(#rekubvglaf) .gt_center {
   text-align: center;
 }
 
-:where(#wgombteimw) .gt_right {
+:where(#rekubvglaf) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#wgombteimw) .gt_font_normal {
+:where(#rekubvglaf) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#wgombteimw) .gt_font_bold {
+:where(#rekubvglaf) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#wgombteimw) .gt_font_italic {
+:where(#rekubvglaf) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#wgombteimw) .gt_super {
+:where(#rekubvglaf) .gt_super {
   font-size: 65%;
 }
 
-:where(#wgombteimw) .gt_footnote_marks {
+:where(#rekubvglaf) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#wgombteimw) .gt_asterisk {
+:where(#rekubvglaf) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#wgombteimw) .gt_indent_1 {
+:where(#rekubvglaf) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#wgombteimw) .gt_indent_2 {
+:where(#rekubvglaf) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#wgombteimw) .gt_indent_3 {
+:where(#rekubvglaf) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#wgombteimw) .gt_indent_4 {
+:where(#rekubvglaf) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#wgombteimw) .gt_indent_5 {
+:where(#rekubvglaf) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -731,10 +750,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 
 
+
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-gorman2014" class="csl-entry" role="doc-biblioentry">
+Gorman, Kristen B., Tony D. Williams, and William R. Fraser. 2014. <span>“Ecological Sexual Dimorphism and Environmental Variability Within a Community of Antarctic Penguins (Genus Pygoscelis).”</span> Edited by André Chiaradia. <em>PLoS ONE</em> 9 (3): e90081. <a href="https://doi.org/10.1371/journal.pone.0090081">https://doi.org/10.1371/journal.pone.0090081</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

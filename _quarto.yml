@@ -5,8 +5,14 @@ website:
   title: Quarto website
   navbar:
     left:
-      - href: index.qmd
-      - href: hello.qmd
-      - href: slides.qmd
+      - text: Home
+        href: index.qmd
+      - text: Report
+        href: hello.qmd
+      - text: Slides
+        href: slides.qmd
 
 format: html
+
+execute:
+  freeze: true

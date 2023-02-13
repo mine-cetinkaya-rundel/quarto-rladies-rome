@@ -4,13 +4,14 @@ format: html
 editor: visual
 execute:
   echo: true
+bibliography: references.bib
 ---
 
 # Introduction
 
 ## Data
 
-My *data* [come]{.underline} from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins/) package.
+[@gorman2014]My *data* [come]{.underline} from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins/) package.
 
 ```{r}
 #| label: load-data-pkg
