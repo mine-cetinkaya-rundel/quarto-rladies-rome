@@ -8,7 +8,7 @@ execute:
 
 ## Data
 
-My data come from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins/) package.
+My *data* [come]{.underline} from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins/) package.
 
 ```{r}
 #| label: load-data-pkg
@@ -17,4 +17,32 @@ My data come from the [**palmerpenguins**](https://allisonhorst.github.io/palmer
 library(palmerpenguins)
 library(tidyverse)
 library(gt)
+```
+
+[![Three species of penguins.](images/image-590340485.png){fig-alt="Illustrations of three species of penguins: Chinstrap, Gentoo, and Adelie." fig-align="center" width="400"}](https://allisonhorst.github.io/palmerpenguins/articles/art.html)
+
+@fig-species-bar shows the distribution of three species in the dataset.
+
+```{r}
+#| label: fig-species-bar
+#| fig-cap: |
+#|   Barplot of species of penguins, with the most 
+#|   common being Adelie, then Gentoo, then Chinstrap.
+#| fig-alt: |
+#|   There are 150 Adelies, roughly 60 Chinstraps, and 
+#|   roughly 125 Gentoos.
+
+ggplot(penguins, aes(x = species)) +
+  geom_bar()
+```
+
+In @tbl-penguins, we see the first six penguins from the dataset.
+
+```{r}
+#| label: tbl-penguins
+#| tbl-cap: |
+#|   First six penguins in the dataset.
+penguins |>
+  slice_head(n = 6) |>
+  gt()
 ```
