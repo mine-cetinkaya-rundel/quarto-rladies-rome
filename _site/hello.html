@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>My first Quarto document</title>
+<title>Quarto website - My first Quarto document</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,151 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
-<script src="hello_files/libs/clipboard/clipboard.min.js"></script>
-<script src="hello_files/libs/quarto-html/quarto.js"></script>
-<script src="hello_files/libs/quarto-html/popper.min.js"></script>
-<script src="hello_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="hello_files/libs/quarto-html/anchor.min.js"></script>
-<link href="hello_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="hello_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="hello_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="hello_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="hello_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
 
 
 </head>
 
-<body class="fullcontent">
+<body class="nav-fixed fullcontent">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Quarto website</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">My first Quarto website</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./hello.html" aria-current="page">
+ <span class="menu-text">My first Quarto document</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./slides.html">
+ <span class="menu-text">My first Quarto document</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -60,11 +184,15 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
 <section id="data" class="level2">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
 <p>My <em>data</em> <u>come</u> from the <a href="https://allisonhorst.github.io/palmerpenguins/"><strong>palmerpenguins</strong></a> package.</p>
 <div class="cell">
-
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -72,28 +200,46 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figcaption class="figure-caption">Three species of penguins.</figcaption><p></p>
 </figure>
 </div>
+</section>
+<section id="species" class="level2">
+<h2 class="anchored" data-anchor-id="species">Species</h2>
 <p><a href="#fig-species-bar">Figure&nbsp;1</a> shows the distribution of three species in the dataset.</p>
-<div class="cell">
+<div class="cell" data-output-location="column-fragment">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> species)) <span class="sc">+</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Species"</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Count"</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">Title =</span> <span class="st">"Palmer Penguins"</span>,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">Subtitle =</span> <span class="st">"From palmerpenguins package"</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-species-bar" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="hello_files/figure-html/fig-species-bar-1.png" class="img-fluid figure-img" alt="There are 150 Adelies, roughly 60 Chinstraps, and roughly 125 Gentoos." width="672"></p>
+<p><img src="hello_files/figure-html/fig-species-bar-1.png" class="img-fluid figure-img" alt="There are 150 Adelies, roughly 60 Chinstraps, and roughly 125 Gentoos. " width="672"></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;1: Barplot of species of penguins, with the most common being Adelie, then Gentoo, then Chinstrap.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
+</section>
+<section id="penguins" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="penguins">Penguins</h2>
 <p>In <a href="#tbl-penguins">Table&nbsp;1</a>, we see the first six penguins from the dataset.</p>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">6</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="tbl-penguins" class="anchored">
 
-<div id="qibbbsvqqy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="wgombteimw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#qibbbsvqqy) .gt_table {
+:where(#wgombteimw) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -118,7 +264,7 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-:where(#qibbbsvqqy) .gt_heading {
+:where(#wgombteimw) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -130,12 +276,12 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#qibbbsvqqy) .gt_caption {
+:where(#wgombteimw) .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#qibbbsvqqy) .gt_title {
+:where(#wgombteimw) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -147,7 +293,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-:where(#qibbbsvqqy) .gt_subtitle {
+:where(#wgombteimw) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -159,13 +305,13 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-:where(#qibbbsvqqy) .gt_bottom_border {
+:where(#wgombteimw) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#qibbbsvqqy) .gt_col_headings {
+:where(#wgombteimw) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -180,7 +326,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#qibbbsvqqy) .gt_col_heading {
+:where(#wgombteimw) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -200,7 +346,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-:where(#qibbbsvqqy) .gt_column_spanner_outer {
+:where(#wgombteimw) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -212,15 +358,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-:where(#qibbbsvqqy) .gt_column_spanner_outer:first-child {
+:where(#wgombteimw) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#qibbbsvqqy) .gt_column_spanner_outer:last-child {
+:where(#wgombteimw) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#qibbbsvqqy) .gt_column_spanner {
+:where(#wgombteimw) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -232,7 +378,7 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-:where(#qibbbsvqqy) .gt_group_heading {
+:where(#wgombteimw) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -258,7 +404,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-:where(#qibbbsvqqy) .gt_empty_group_heading {
+:where(#wgombteimw) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -273,15 +419,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-:where(#qibbbsvqqy) .gt_from_md > :first-child {
+:where(#wgombteimw) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#qibbbsvqqy) .gt_from_md > :last-child {
+:where(#wgombteimw) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#qibbbsvqqy) .gt_row {
+:where(#wgombteimw) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -300,7 +446,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-:where(#qibbbsvqqy) .gt_stub {
+:where(#wgombteimw) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -313,7 +459,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#qibbbsvqqy) .gt_stub_row_group {
+:where(#wgombteimw) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -327,11 +473,11 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-:where(#qibbbsvqqy) .gt_row_group_first td {
+:where(#wgombteimw) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#qibbbsvqqy) .gt_summary_row {
+:where(#wgombteimw) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -341,16 +487,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#qibbbsvqqy) .gt_first_summary_row {
+:where(#wgombteimw) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#qibbbsvqqy) .gt_first_summary_row.thick {
+:where(#wgombteimw) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#qibbbsvqqy) .gt_last_summary_row {
+:where(#wgombteimw) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -360,7 +506,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-:where(#qibbbsvqqy) .gt_grand_summary_row {
+:where(#wgombteimw) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -370,7 +516,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#qibbbsvqqy) .gt_first_grand_summary_row {
+:where(#wgombteimw) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -380,11 +526,11 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-:where(#qibbbsvqqy) .gt_striped {
+:where(#wgombteimw) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#qibbbsvqqy) .gt_table_body {
+:where(#wgombteimw) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -393,7 +539,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-:where(#qibbbsvqqy) .gt_footnotes {
+:where(#wgombteimw) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -407,7 +553,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#qibbbsvqqy) .gt_footnote {
+:where(#wgombteimw) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -416,7 +562,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#qibbbsvqqy) .gt_sourcenotes {
+:where(#wgombteimw) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -430,7 +576,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#qibbbsvqqy) .gt_sourcenote {
+:where(#wgombteimw) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -438,64 +584,64 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#qibbbsvqqy) .gt_left {
+:where(#wgombteimw) .gt_left {
   text-align: left;
 }
 
-:where(#qibbbsvqqy) .gt_center {
+:where(#wgombteimw) .gt_center {
   text-align: center;
 }
 
-:where(#qibbbsvqqy) .gt_right {
+:where(#wgombteimw) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#qibbbsvqqy) .gt_font_normal {
+:where(#wgombteimw) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#qibbbsvqqy) .gt_font_bold {
+:where(#wgombteimw) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#qibbbsvqqy) .gt_font_italic {
+:where(#wgombteimw) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#qibbbsvqqy) .gt_super {
+:where(#wgombteimw) .gt_super {
   font-size: 65%;
 }
 
-:where(#qibbbsvqqy) .gt_footnote_marks {
+:where(#wgombteimw) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#qibbbsvqqy) .gt_asterisk {
+:where(#wgombteimw) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#qibbbsvqqy) .gt_indent_1 {
+:where(#wgombteimw) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#qibbbsvqqy) .gt_indent_2 {
+:where(#wgombteimw) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#qibbbsvqqy) .gt_indent_3 {
+:where(#wgombteimw) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#qibbbsvqqy) .gt_indent_4 {
+:where(#wgombteimw) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#qibbbsvqqy) .gt_indent_5 {
+:where(#wgombteimw) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -571,9 +717,24 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
+</section>
+<section id="analysis" class="level1">
+<h1>Analysis</h1>
+<section id="model-results" class="level2">
+<h2 class="anchored" data-anchor-id="model-results">Model results</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Text in column 1</p>
+</div><div class="column" style="width:50%;">
+<p>Text in column 2</p>
+</div>
+</div>
 
-</main>
-<!-- /main column -->
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -1,6 +1,6 @@
 ---
 title: "My first Quarto document"
-format: html
+format: revealjs
 editor: visual
 execute:
   echo: true

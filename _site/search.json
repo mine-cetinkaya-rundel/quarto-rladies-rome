@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "slides.html#data",
+    "href": "slides.html#data",
+    "title": "My first Quarto document",
+    "section": "Data",
+    "text": "Data\nMy data come from the palmerpenguins package.\n\nlibrary(palmerpenguins)\nlibrary(tidyverse)\nlibrary(gt)\n\n\nThree species of penguins."
+  },
+  {
+    "objectID": "slides.html#species",
+    "href": "slides.html#species",
+    "title": "My first Quarto document",
+    "section": "Species",
+    "text": "Species\nFigure 1 shows the distribution of three species in the dataset.\n\n\nggplot(penguins, aes(x = species)) +\n  geom_bar() +\n  theme_bw() +\n  labs(\n    x = \"Species\",\n    y = \"Count\",\n    Title = \"Palmer Penguins\",\n    Subtitle = \"From palmerpenguins package\"\n  )\n\n\n\n\n\nFigure 1: Barplot of species of penguins, with the most common being Adelie, then Gentoo, then Chinstrap."
+  },
+  {
+    "objectID": "slides.html#penguins",
+    "href": "slides.html#penguins",
+    "title": "My first Quarto document",
+    "section": "Penguins",
+    "text": "Penguins\nIn Table 1, we see the first six penguins from the dataset.\n\npenguins |>\n  slice_head(n = 6) |>\n  gt()\n\n\n\n\n\nTable 1:  First six penguins in the dataset. \n  \n  \n    \n      species\n      island\n      bill_length_mm\n      bill_depth_mm\n      flipper_length_mm\n      body_mass_g\n      sex\n      year\n    \n  \n  \n    Adelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n    Adelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n    Adelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n    Adelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n    Adelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n    Adelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007"
+  },
+  {
+    "objectID": "slides.html#model-results",
+    "href": "slides.html#model-results",
+    "title": "My first Quarto document",
+    "section": "Model results",
+    "text": "Model results\n\n\nText in column 1\n\nText in column 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My first Quarto website",
+    "section": "",
+    "text": "Homepage for the website."
+  },
+  {
+    "objectID": "hello.html",
+    "href": "hello.html",
+    "title": "My first Quarto document",
+    "section": "",
+    "text": "My data come from the palmerpenguins package.\n\nlibrary(palmerpenguins)\nlibrary(tidyverse)\nlibrary(gt)\n\n\n\n\nThree species of penguins.\n\n\n\n\n\nFigure 1 shows the distribution of three species in the dataset.\n\nggplot(penguins, aes(x = species)) +\n  geom_bar() +\n  theme_bw() +\n  labs(\n    x = \"Species\",\n    y = \"Count\",\n    Title = \"Palmer Penguins\",\n    Subtitle = \"From palmerpenguins package\"\n  )\n\n\n\n\nFigure 1: Barplot of species of penguins, with the most common being Adelie, then Gentoo, then Chinstrap.\n\n\n\n\n\n\n\nIn Table 1, we see the first six penguins from the dataset.\n\npenguins |>\n  slice_head(n = 6) |>\n  gt()\n\n\n\n\n\nTable 1:  First six penguins in the dataset. \n  \n  \n    \n      species\n      island\n      bill_length_mm\n      bill_depth_mm\n      flipper_length_mm\n      body_mass_g\n      sex\n      year\n    \n  \n  \n    Adelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n    Adelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n    Adelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n    Adelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n    Adelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n    Adelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007"
+  },
+  {
+    "objectID": "hello.html#model-results",
+    "href": "hello.html#model-results",
+    "title": "My first Quarto document",
+    "section": "Model results",
+    "text": "Model results\n\n\nText in column 1\n\nText in column 2"
+  }
+]
