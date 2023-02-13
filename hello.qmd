@@ -1,0 +1,20 @@
+---
+title: "My first Quarto document"
+format: html
+editor: visual
+execute: 
+  echo: false
+---
+
+## Data
+
+My data come from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins/) package.
+
+```{r}
+#| label: load-data-pkg
+#| message: false
+
+library(palmerpenguins)
+library(tidyverse)
+library(gt)
+```
